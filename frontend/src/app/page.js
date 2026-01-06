@@ -1,9 +1,10 @@
+import Navabar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-    
-      <h2>Hi, I am Ankita !</h2>
+    // <div className=" min-h-screen bg-zinc-50">
+        <div className=" h-400 bg-zinc-50">
+      <Navabar/>
     </div>
   );
 }
