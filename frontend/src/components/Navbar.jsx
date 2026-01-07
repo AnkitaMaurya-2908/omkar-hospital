@@ -5,7 +5,6 @@ import { FaLongArrowAltRight, FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
