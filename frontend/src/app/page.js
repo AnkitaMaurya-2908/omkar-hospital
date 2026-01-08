@@ -1,5 +1,4 @@
 import Features from "@/components/FeaturesSection/Features";
-import DoctorCard from "@/components/HeroSection/DoctorCard";
 import Hero from "@/components/HeroSection/Hero";
 import Navabar from "@/components/HeroSection/Navbar"
 
