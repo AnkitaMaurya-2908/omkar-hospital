@@ -9,7 +9,7 @@ export default function Features() {
           {featuresData.map(({ icon: Icon, text, onlyLg }) => (
             <div
               key={text}
-              className={`flex bg- px-3 py-1 rounded-md items-center gap-2  ${
+              className={`flex bg- px-3 py-1 rounded-md items-center justify-center  gap-2  ${
                 onlyLg ? "hidden lg:flex" : ""
               } p-1 shadow-sm`}
             >
