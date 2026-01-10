@@ -3,6 +3,7 @@ import Hero from "@/components/HeroSection/Hero";
 import Navabar from "@/components/HeroSection/Navbar"
 import Faq from "@/components/FaqSection/Faq";
 import OurServices from "@/components/OurServicesSection/OurServices"
+import WhyChooseUs from "@/components/WhyChooseUs/ChooseUsSection"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navabar/>
       <Hero/>
       <Features/>
+      <WhyChooseUs/>
       <OurServices/>
       <Faq/>
 
