@@ -5,6 +5,8 @@ import Faq from "@/components/FaqSection/Faq";
 import OurServices from "@/components/OurServicesSection/OurServices"
 import WhyChooseUs from "@/components/WhyChooseUs/ChooseUsSection"
 import PatientTestimonials from "@/components/Testimonials/Testimonials"
+import ContactForm from "@/components/ContactSection/ContactForm";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <OurServices/>
       <PatientTestimonials/>
       <Faq/>
+      <ContactForm/>
+      <Footer/>
 
     </div>
   );
