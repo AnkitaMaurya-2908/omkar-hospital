@@ -36,7 +36,7 @@ export default function OurServices() {
   ];
 
   return (
-    <div className='py-6 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12'>
+    <div className='py-6 sm:py-10 bg-white md:py-12 px-4 sm:px-6 md:px-8 lg:px-12'>
       {/* HEADER SECTION */}
       <div className="max-w-4xl mx-auto mb-8 md:mb-12 lg:mb-16">
         <h1 className='text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[#ee6c4d] px-4'>

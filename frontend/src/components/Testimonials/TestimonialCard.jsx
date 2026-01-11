@@ -15,7 +15,7 @@ const TestimonialCard = ({ quote, name, department, image, large = false }) => {
             : "text-base mb-8"
         }`}
       >
-        “{quote}”
+        {quote}
       </p>
 
       {/* Author */}

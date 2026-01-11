@@ -15,7 +15,7 @@ export default function Home() {
       <Features/>
       <WhyChooseUs/>
       <OurServices/>
-            <PatientTestimonials/>
+      <PatientTestimonials/>
       <Faq/>
 
     </div>
