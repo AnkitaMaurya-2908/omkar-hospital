@@ -2,7 +2,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function Card({ badgeText, title, description }) {
   return (
-    <div className="relative ">
+    <div className="relative  ">
       <button className="absolute -top-4 -left-3 bg-zinc-200 text-[#293241] text-xs font-light px-4 py-1 rounded-full">
         {badgeText}
       </button>
