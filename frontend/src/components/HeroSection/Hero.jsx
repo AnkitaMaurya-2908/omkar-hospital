@@ -102,6 +102,10 @@ const Hero = () => {
               TRUSTED HEALTHCARE SERVICES
             </h6>
 
+                <h1 className=" font-bold text-[#293241] text-3xl md:text-4xl  ">
+             Advanced Care for a
+            </h1>
+
             <h1 className="font-bold text-4xl md:text-5xl whitespace-nowrap leading-tight min-h-[3rem] md:min-h-[4rem]">
               <AnimatedText />
             </h1>

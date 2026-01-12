@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 
 const texts = [
   "Healthier Tomorrow",
-  "Better Medical Care",
-  "Trusted Healthcare",
-  "Your Health, Our Priority",
+  "Safer Healing Journey",
+  "Better Quality of Life",
+  "Stronger Recovery",
 ];
 
 const TYPING_SPEED = 90;

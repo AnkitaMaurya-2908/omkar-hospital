@@ -3,10 +3,9 @@ import FeaturedTestimonial from "./FeaturedTestimonial";
 import TestimonialCard from "./TestimonialCard";
 import { testimonials } from "@/data/testimonialData";
 
-
 const PatientTestimonials = () => {
-  const featured = testimonials.find(t => t.featured);
-  const others = testimonials.filter(t => !t.featured);
+  const featured = testimonials.find((t) => t.featured);
+  const others = testimonials.filter((t) => !t.featured);
 
   return (
     <section className="bg-zinc-50 py-16 px-4 sm:px-6 lg:px-38">
@@ -20,7 +19,8 @@ const PatientTestimonials = () => {
             What Our Patients Say
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Real experiences that inspire us to keep delivering exceptional care.
+            Real experiences that inspire us to keep delivering exceptional
+            care.
           </p>
         </div>
 
@@ -32,17 +32,16 @@ const PatientTestimonials = () => {
         )}
 
         {/* Grid */}
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-  {others.map((item, index) => (
-    <div
-      key={index}
-      className={index === others.length - 1 ? "hidden lg:block" : ""}
-    >
-      <TestimonialCard {...item} />
-    </div>
-  ))}
-</div>
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {others.map((item, index) => (
+            <div
+              key={index}
+              className={index === others.length - 1 ? "hidden lg:block" : ""}
+            >
+              <TestimonialCard {...item} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

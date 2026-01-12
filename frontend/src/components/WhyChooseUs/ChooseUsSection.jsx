@@ -51,8 +51,6 @@
 
 // export default WhyChooseUs;
 
-
-
 "use client";
 
 import React, { useState } from "react";
@@ -66,10 +64,8 @@ const WhyChooseUs = () => {
   return (
     <div className="w-full bg-zinc-50 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-18 xl:px-38">
       <div className="max-w-7xl mx-auto">
-
-        {/* HEADER — animated */}
         <motion.div
-          initial={{ opacity: 0, x: -80 }}   // LEFT → RIGHT
+          initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ amount: 0.8 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -89,13 +85,12 @@ const WhyChooseUs = () => {
 
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl leading-relaxed">
             Onkar Hospital is a world of comprehensive healthcare where your
-            well-being takes center stage. At Onkar Hospital, we&#39;re dedicated
-            to providing you with personalized and compassionate medical
-            services.
+            well-being takes center stage. At Onkar Hospital, we&#39;re
+            dedicated to providing you with personalized and compassionate
+            medical services.
           </p>
         </motion.div>
 
-        {/* SERVICES GRID — NO animation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <ChooseUsCard
@@ -109,7 +104,6 @@ const WhyChooseUs = () => {
             />
           ))}
         </div>
-
       </div>
     </div>
   );

@@ -45,22 +45,7 @@ const FeaturedTestimonial = ({ quote, name, department, image }) => {
       viewport={{ margin: "-50px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       whileHover={{ y: -5 }}
-      className="
-        relative
-        group
-        rounded-3xl
-        p-6 pl-8
-        flex flex-col lg:flex-row
-        gap-4 md:gap-10
-        overflow-hidden
-        bg-gradient-to-br from-white via-gray-50 to-white
-        border border-slate-200
-        backdrop-blur-sm
-        transition-all duration-500 ease-out
-        hover:border-[#ee6c4d]/40
-        hover:shadow-xl
-      "
-    >
+      className=" relative group rounded-3xl p-6 pl-8 flex flex-col lg:flex-row gap-4 md:gap-10 overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white border border-slate-200 backdrop-blur-sm transition-all duration-500 ease-out hover:border-[#ee6c4d]/40 hover:shadow-xl">
       {/* Accent Strip with animation */}
       <motion.span
         initial={{ scaleY: 0 }}

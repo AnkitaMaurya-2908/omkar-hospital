@@ -1,32 +1,3 @@
-// import React from "react";
-// import { featuresData } from "@/data/featuresData";
-
-// export default function Features() {
-//   return (
-//     <div className=" w-full bg-[#3d5a80] py-1 md:py-2">
-//       <div className="max-w-7xl mx-auto px-2 md:px-4">
-//         <div className="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-2 lg:gap-6 text-xs lg:text-sm font-light text-white">
-//           {featuresData.map(({ icon: Icon, text, onlyLg }) => (
-//             <div
-//               key={text}
-//               className={`flex bg- px-3 py-1 rounded-md items-center justify-center  gap-2  ${
-//                 onlyLg ? "hidden lg:flex" : ""
-//               } p-1 shadow-sm`}
-//             >
-//               <Icon size={24} className="text-white" />
-//               <span>{text}</span>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-      
-//     </div>
-//   );
-// }
-
-
-
-
 import React from "react";
 import { featuresData } from "@/data/featuresData";
 
@@ -38,25 +9,14 @@ export default function Features() {
           {featuresData.map(({ icon: Icon, text, onlyLg }) => (
             <div
               key={text}
-              className={`
-                group
-                cursor-pointer
-                flex items-center justify-center gap-2
-                px-3 py-1 rounded-md
-                bg-white/5
-                shadow-sm
-                transition-colors duration-300 ease-out
-                hover:bg-white/15
-                ${onlyLg ? "hidden lg:flex" : ""}
-              `}
+              className={` group cursor-pointer flex items-center justify-center gap-2 px-3 py-1 rounded-md bg-white/5 shadow-sm transition-colors duration-300 ease-out hover:bg-white/15 ${
+                onlyLg ? "hidden lg:flex" : ""
+              }`}
             >
-              {/* Icon */}
               <Icon
                 size={24}
                 className="text-white transition-colors duration-300 ease-out group-hover:text-[#ffd166]"
               />
-
-              {/* Text */}
               <span className="whitespace-nowrap transition-colors duration-300 ease-out group-hover:text-[#ffd166]">
                 {text}
               </span>

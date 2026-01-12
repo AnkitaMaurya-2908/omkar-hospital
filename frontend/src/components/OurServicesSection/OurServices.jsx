@@ -31,9 +31,6 @@
 //   )
 // }
 
-
-
-
 "use client";
 
 import React from "react";
@@ -44,8 +41,6 @@ import { services } from "@/data/servicesData";
 export default function OurServices() {
   return (
     <div className="py-6 sm:py-10 bg-white md:py-12 px-4 sm:px-6 md:px-8 lg:px-12">
-
-      {/* HEADER SECTION */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -57,11 +52,11 @@ export default function OurServices() {
           Our Medical Services
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl pt-2 px-4 md:pt-3 max-w-3xl mx-auto text-center font-light text-gray-600 leading-relaxed">
-          Comprehensive healthcare solutions delivered with excellence and compassion
+          Comprehensive healthcare solutions delivered with excellence and
+          compassion
         </p>
       </motion.div>
 
-      {/* SERVICES GRID */}
       <motion.div
         initial="hidden"
         whileInView="visible"
