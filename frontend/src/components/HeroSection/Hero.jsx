@@ -106,7 +106,7 @@ const Hero = () => {
              Advanced Care for a
             </h1>
 
-            <h1 className="font-bold text-4xl md:text-5xl whitespace-nowrap leading-tight min-h-[3rem] md:min-h-[4rem]">
+            <h1 className="font-bold text-2xl sm:text-4xl md:text-5xl whitespace-nowrap leading-tight min-h-[3rem] md:min-h-[4rem]">
               <AnimatedText />
             </h1>
 
