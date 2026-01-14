@@ -57,7 +57,7 @@ const Navbar = () => {
             Contact Us
           </a>
           <a href="#" className="hover:text-[#3D5A80]">
-            Reviews
+            Meet Our Doctors
           </a>
         </div>
 
@@ -91,7 +91,8 @@ const Navbar = () => {
             Contact Us
           </a>
           <a href="#" className="block hover:text-[#3D5A80]">
-            Reviews
+                        Meet Our Doctors
+
           </a>
           <div className="flex items-center justify-between pt-4 border-t border-[#293241]">
             <button className="text-sm font-medium px-4 py-1.5 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] flex items-center gap-2">
