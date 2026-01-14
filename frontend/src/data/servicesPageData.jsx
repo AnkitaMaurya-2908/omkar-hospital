@@ -1,16 +1,16 @@
 export const services = [
     {
-      image: "/emergency.jpg",
+      image: "/ambulance.jpg",
       title: "24 Hours Emergency Service",
       description: "Round-the-clock emergency care with immediate medical attention and trauma support."
     },
     {
-      image: "/opdd.jpg",
+      image: "/doctor-with-patient.avif",
       title: "OPD Services",
       description: "Comprehensive outpatient department services with specialist consultations and routine check-ups."
     },
     {
-      image: "/ipd-services.jpg",
+      image: "/ipd-bg.webp",
       title: "IPD Facilities",
       description: "State-of-the-art inpatient care with comfortable rooms and continuous medical monitoring."
     },
@@ -20,7 +20,7 @@ export const services = [
       description: "Advanced surgical facilities equipped with cutting-edge technology and expert surgical teams."
     },
     {
-      image: "/lab.jpg",
+      image: "/gs-laboratory-services.jpg",
       title: "Laboratory Services",
       description: "Complete diagnostic services with accurate testing and quick turnaround times."
     },
