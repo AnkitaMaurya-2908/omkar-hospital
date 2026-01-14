@@ -7,11 +7,13 @@ import ServiceCard from "@/components/OurServicesSection/ServiceCard";
 import { services } from "@/data/servicesPageData";
 import Navbar from "@/components/HeroSection/Navbar";
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/ServicesPage/Header";
 
 export default function OurServicesPage() {
   return (
     <>
     <Navbar/>
+    <Header/>
 
     <div className="py-16 sm:py-326 bg-white md:py-36 px-4 sm:px-6 md:px-8 lg:px-12">
       <motion.div
