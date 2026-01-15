@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { FaLongArrowAltRight, FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,21 +45,25 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex cursor-pointer items-center space-x-6 text-[#293241] text-sm font-medium">
-          <a href="#" className="hover:text-[#3D5A80]">
+          <Link href="/" className="hover:text-[#3D5A80]">
             Home
-          </a>
-          <a href="#" className="hover:text-[#3D5A80]">
+          </Link>
+
+          <Link href="/services" className="hover:text-[#3D5A80]">
             Our Services
-          </a>
-          <a href="#" className="hover:text-[#3D5A80]">
+          </Link>
+
+          <Link href="/about" className="hover:text-[#3D5A80]">
             About Us
-          </a>
-          <a href="#" className="hover:text-[#3D5A80]">
+          </Link>
+
+          <Link href="/contact" className="hover:text-[#3D5A80]">
             Contact Us
-          </a>
-          <a href="#" className="hover:text-[#3D5A80]">
+          </Link>
+
+          <Link href="/doctors" className="hover:text-[#3D5A80]">
             Meet Our Doctors
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center space-x-4">
@@ -78,22 +83,26 @@ const Navbar = () => {
       {/* Mobile */}
       {isOpen && (
         <div className="md:hidden mt-3 bg-white text-[#293241] border border-[#582f0e]/10 shadow-lg rounded-2xl px-6 py-4 space-y-4 text-sm font-medium">
-          <a href="#" className="block hover:text-[#3D5A80]">
+          <Link href="/" className="hover:text-[#3D5A80]">
             Home
-          </a>
-          <a href="#" className="block hover:text-[#3D5A80]">
-            Our Services
-          </a>
-          <a href="#" className="block hover:text-[#3D5A80]">
-            About Us
-          </a>
-          <a href="#" className="block hover:text-[#3D5A80]">
-            Contact Us
-          </a>
-          <a href="#" className="block hover:text-[#3D5A80]">
-                        Meet Our Doctors
+          </Link>
 
-          </a>
+          <Link href="/services" className="hover:text-[#3D5A80]">
+            Our Services
+          </Link>
+
+          <Link href="/about" className="hover:text-[#3D5A80]">
+            About Us
+          </Link>
+
+          <Link href="/contact" className="hover:text-[#3D5A80]">
+            Contact Us
+          </Link>
+
+          <Link href="/doctors" className="hover:text-[#3D5A80]">
+            Meet Our Doctors
+          </Link>
+
           <div className="flex items-center justify-between pt-4 border-t border-[#293241]">
             <button className="text-sm font-medium px-4 py-1.5 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] flex items-center gap-2">
               Enquire Now <FaLongArrowAltRight />
