@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const DoctorCard = () => {
   return (
@@ -6,7 +8,6 @@ const DoctorCard = () => {
       className="group relative bg-zinc-50 shadow-sm rounded-2xl p-3 md:p-6 pl-40 sm:pl-48 md:pl-56 overflow-visible h-53 sm:h-60 md:h-70 lg:h-70 
       transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg"
     >
-      {/* Doctor Image */}
       <div
         className="absolute -top-19 -left-15 w-75 sm:w-83 md:w-92 h-70 pointer-events-none 
          "
@@ -22,13 +23,11 @@ const DoctorCard = () => {
       </div>
 
       <div className="pl-6 whitespace-nowrap md:whitespace-normal">
-        {/* Text */}
         <p className="text-xs md:text-sm md:text-md font-sm md:font-medium text-[#293241]">
           What is the problem <br />
           happening with you today?
         </p>
 
-        {/* Tags */}
         <div className="relative z-10 mt-4 flex flex-wrap gap-2">
           {["Back pain", "Headache", "Fever", "Itching"].map((item) => (
             <span
@@ -42,13 +41,12 @@ const DoctorCard = () => {
           ))}
         </div>
 
-        {/* Button */}
-        <button
-          className="absolute bottom-2 right-6 text-sm font-medium text-[#ee6c4d] hover:text-[#3d5a80] 
-          flex items-center gap-1 transition-all duration-200 group-hover:gap-2"
+        <Link
+          href="/contact"
+          className="absolute bottom-2 right-6 text-sm font-medium text-[#ee6c4d] hover:text-[#3d5a80] flex items-center gap-1 transition-all duration-200 group-hover:gap-2"
         >
-          See Details →
-        </button>
+          Get Medical Help <FaArrowRight className="text-xs" />
+        </Link>
       </div>
     </div>
   );

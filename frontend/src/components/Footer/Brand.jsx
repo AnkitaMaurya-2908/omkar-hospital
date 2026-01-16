@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 export default function Brand() {
   return (
@@ -35,15 +36,16 @@ export default function Brand() {
             Ready to get started?
           </h4>
           <div className="flex flex-col sm:flex-row lg:justify-end gap-3">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center px-6 py-2 bg-[#ee6c4d] hover:bg-[#d85a3d] text-white font-semibold rounded-xl transition-all duration-300"
             >
               Book Appointment
-            </a>
+            </Link>
             <a
-              href="#emergency"
+              href="tel:8756223212"
               className="inline-flex items-center justify-center px-6 py-2 border-2 border-white/20 hover:border-[#ee6c4d] text-white font-semibold rounded-xl transition-all duration-300"
+              aria-label="Call Emergency Care"
             >
               Emergency Care
             </a>

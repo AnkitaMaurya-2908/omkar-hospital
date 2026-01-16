@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaPlus, FaDna, FaQuestionCircle, FaHeart } from "react-icons/fa";
+import Link from "next/link";
 
 export default function CallToAction() {
   return (
@@ -14,10 +15,13 @@ export default function CallToAction() {
               Get trusted answers directly from our medical experts.
             </p>
 
-            <button className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white px-5 py-2.5 rounded-xl font-semibold  transition">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white px-5 py-2.5 rounded-xl font-semibold transition"
+            >
               Book Your Appointment
               <span className="text-xs opacity-70">now</span>
-            </button>
+            </Link>
           </div>
 
           <div className="absolute top-2 right-1 hidden md:block">

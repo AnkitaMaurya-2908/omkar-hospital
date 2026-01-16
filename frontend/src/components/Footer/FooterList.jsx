@@ -1,4 +1,6 @@
+
 import React from "react";
+import Link from "next/link";
 
 export default function FooterList({ title, items }) {
   return (
@@ -13,13 +15,21 @@ export default function FooterList({ title, items }) {
       <ul className="space-y-2 flex flex-col items-center sm:items-start">
         {items.map((item, i) => (
           <li key={i}>
-            <a
-              href={item.href || "#"}
-              className="text-gray-400 hover:text-[#ee6c4d] transition-all duration-300 text-sm sm:text-base flex items-center gap-2 group"
-            >
-              <span className="w-0 group-hover:w-2 h-0.5 bg-[#ee6c4d] transition-all duration-300"></span>
-              {item.label}
-            </a>
+            {item.href ? (
+              <Link
+                href={item.href}
+                className="text-gray-400 hover:text-[#ee6c4d]
+                transition-all duration-300 text-sm sm:text-base
+                flex items-center gap-2 group"
+              >
+                <span className="w-0 group-hover:w-2 h-0.5 bg-[#ee6c4d] transition-all duration-300"></span>
+                {item.label}
+              </Link>
+            ) : (
+              <span className="text-gray-400 text-sm sm:text-base">
+                {item.label}
+              </span>
+            )}
           </li>
         ))}
       </ul>

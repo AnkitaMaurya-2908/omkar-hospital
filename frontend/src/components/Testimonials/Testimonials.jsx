@@ -10,7 +10,6 @@ const PatientTestimonials = () => {
   return (
     <section className="bg-zinc-50 py-16 px-4 sm:px-6 lg:px-38">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-8">
           <span className="inline-block text-sm font-semibold text-[#ee6c4d] uppercase px-4 py-1 rounded-full">
             Testimonial
@@ -24,14 +23,12 @@ const PatientTestimonials = () => {
           </p>
         </div>
 
-        {/* Featured */}
         {featured && (
           <div className="mb-6">
             <FeaturedTestimonial {...featured} />
           </div>
         )}
 
-        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {others.map((item, index) => (
             <div

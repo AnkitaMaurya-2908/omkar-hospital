@@ -5,7 +5,7 @@ import Specialities from "@/components/AboutPage/Specialities";
 export default function AboutPageHeader() {
   return (
     <div>
-      <section className="py-8 md:py-16 px-4 md:px-8 lg:px-6 mt-12 md:mt-18">
+      <section className="py-8 md:py-16 px-4 md:px-8 lg:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 items-center">
             {/* Right Side - Content */}

@@ -4,8 +4,11 @@ import React, { useState, useEffect } from "react";
 import { FaLongArrowAltRight, FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,47 +32,82 @@ const Navbar = () => {
       `}
     >
       <nav className="flex items-center justify-between px-6 py-3 border-2 shadow-md rounded-full bg-white text-[#7f5539] border-[#293241]/10 w-full transition-all duration-500 ease-in-out">
-        <a>
-          <div className="flex items-center space-x-2 cursor-pointer">
-            <div>
-              <Image
-                src="/logo.jpg"
-                alt="Onkar Logo"
-                width={50}
-                height={40}
-                priority
-              />
-            </div>
+        <Link href="/" aria-label="Go to Home">
+          <div className="flex items-center space-x-2 cursor-pointer hover:opacity-90 transition">
+            <Image
+              src="/logo.jpg"
+              alt="Onkar Hospital Logo"
+              width={50}
+              height={40}
+              priority
+            />
           </div>
-        </a>
+        </Link>
 
-        {/* Desktop */}
         <div className="hidden md:flex cursor-pointer items-center space-x-6 text-[#293241] text-sm font-medium">
-          <Link href="/" className="hover:text-[#3D5A80]">
+          <Link
+            href="/"
+            className={`${
+              pathname === "/"
+                ? "text-[#ee6c4d] font-semibold border-b-2 border-[#ee6c4d]"
+                : "hover:text-[#3D5A80]"
+            }`}
+          >
             Home
           </Link>
 
-          <Link href="/services" className="hover:text-[#3D5A80]">
+          <Link
+            href="/services"
+            className={`${
+              pathname === "/services"
+                ? "text-[#ee6c4d] font-semibold border-b-2 border-[#ee6c4d]"
+                : "hover:text-[#3D5A80]"
+            }`}
+          >
             Our Services
           </Link>
 
-          <Link href="/about" className="hover:text-[#3D5A80]">
+          <Link
+            href="/about"
+            className={`${
+              pathname === "/about"
+                ? "text-[#ee6c4d] font-semibold border-b-2 border-[#ee6c4d]"
+                : "hover:text-[#3D5A80]"
+            }`}
+          >
             About Us
           </Link>
 
-          <Link href="/contact" className="hover:text-[#3D5A80]">
+          <Link
+            href="/contact"
+            className={`${
+              pathname === "/contact"
+                ? "text-[#ee6c4d] font-semibold border-b-2 border-[#ee6c4d]"
+                : "hover:text-[#3D5A80]"
+            }`}
+          >
             Contact Us
           </Link>
 
-          <Link href="/doctors" className="hover:text-[#3D5A80]">
+          <Link
+            href="/doctors"
+            className={`${
+              pathname === "/doctors"
+                ? "text-[#ee6c4d] font-semibold border-b-2 border-[#ee6c4d]"
+                : "hover:text-[#3D5A80]"
+            }`}
+          >
             Meet Our Doctors
           </Link>
         </div>
 
         <div className="flex items-center space-x-4">
-          <button className="hidden lg:flex  text-sm font-medium px-4 py-1.5 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] items-center gap-2">
+          <Link
+            href="/contact"
+            className="hidden lg:flex w-full text-sm font-medium px-4 py-2 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] items-center justify-center gap-2"
+          >
             Enquire Now <FaLongArrowAltRight />
-          </button>
+          </Link>
 
           <button
             className="md:hidden focus:outline-none text-[#EE6C4D]"
@@ -82,31 +120,69 @@ const Navbar = () => {
 
       {/* Mobile */}
       {isOpen && (
-        <div className="md:hidden mt-3 bg-white text-[#293241] border border-[#582f0e]/10 shadow-lg rounded-2xl px-6 py-4 space-y-4 text-sm font-medium">
-          <Link href="/" className="hover:text-[#3D5A80]">
+        <div className="md:hidden mt-3 bg-white text-[#293241] border border-[#582f0e]/10 shadow-lg rounded-2xl px-6 py-4 space-y-2 text-sm font-medium">
+          <Link
+            href="/"
+            className={`block px-3 py-2 rounded-lg ${
+              pathname === "/"
+                ? " text-[#ee6c4d] font-semibold"
+                : "hover:bg-slate-100"
+            }`}
+          >
             Home
           </Link>
 
-          <Link href="/services" className="hover:text-[#3D5A80]">
+          <Link
+            href="/services"
+            className={`block px-3 py-2 rounded-lg ${
+              pathname === "/services"
+                ? " text-[#ee6c4d] font-semibold"
+                : "hover:bg-slate-100"
+            }`}
+          >
             Our Services
           </Link>
 
-          <Link href="/about" className="hover:text-[#3D5A80]">
+          <Link
+            href="/about"
+            className={`block px-3 py-2 rounded-lg ${
+              pathname === "/about"
+                ? " text-[#ee6c4d] font-semibold"
+                : "hover:bg-slate-100"
+            }`}
+          >
             About Us
           </Link>
 
-          <Link href="/contact" className="hover:text-[#3D5A80]">
+          <Link
+            href="/contact"
+            className={`block px-3 py-2 rounded-lg ${
+              pathname === "/contact"
+                ? " text-[#ee6c4d] font-semibold"
+                : "hover:bg-slate-100"
+            }`}
+          >
             Contact Us
           </Link>
 
-          <Link href="/doctors" className="hover:text-[#3D5A80]">
+          <Link
+            href="/doctors"
+            className={`block px-3 py-2 rounded-lg ${
+              pathname === "/doctors"
+                ? " text-[#ee6c4d] font-semibold"
+                : "hover:bg-slate-100"
+            }`}
+          >
             Meet Our Doctors
           </Link>
 
-          <div className="flex items-center justify-between pt-4 border-t border-[#293241]">
-            <button className="text-sm font-medium px-4 py-1.5 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] flex items-center gap-2">
+          <div className="pt-4 border-t border-[#293241]/20">
+            <Link
+              href="/contact"
+              className="w-full text-sm font-medium px-4 py-2 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] flex items-center justify-center gap-2"
+            >
               Enquire Now <FaLongArrowAltRight />
-            </button>
+            </Link>
           </div>
         </div>
       )}

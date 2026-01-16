@@ -2,17 +2,13 @@
 
 import React from "react";
 import { services } from "@/data/servicesPageData";
-import Navbar from "@/components/HeroSection/Navbar";
-import Footer from "@/components/Footer/Footer";
 import Header from "@/components/ServicesPage/Header";
 import OurCapabilities from "@/components/ServicesPage/OurCapabilities";
 import Card from "@/components/ServicesPage/Card";
-import CallToAction from "@/components/HeroSection/CallToAction";
 
 export default function OurServicesPage() {
   return (
     <>
-      <Navbar />
       <Header />
       <OurCapabilities />
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-4 mb-12 md:mb-18">
@@ -27,8 +23,6 @@ export default function OurServicesPage() {
           ))}
         </div>
       </div>
-      <CallToAction/>
-      <Footer />
     </>
   );
 }
