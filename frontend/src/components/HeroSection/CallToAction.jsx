@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { FaPlus, FaDna, FaQuestionCircle, FaHeart } from "react-icons/fa";
 
-export default function HealthCTA() {
+export default function CallToAction() {
   return (
-    <section className="px-4 lg:gap-6 px-4 md:px-6 lg:px-8 md:my-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#ee6c4d] to-orange-300  py-5 px-6 sm:py-6 sm:px-10 flex flex-col lg:flex-row items-start justify-between gap-6">
-          <div className="relative z-10 max-w-xl text-white p-8">
+    <section className="lg:gap-6">
+      <div className="mx-auto">
+        <div className="relative overflow-hidden  bg-gradient-to-r from-[#ee6c4d] to-orange-300  py-2 px-6 sm:py-2 sm:px-10 flex flex-col lg:flex-row items-start justify-between gap-6">
+          <div className="relative z-10 max-w-xl text-white p-3 md:p-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
               Trusted care for every patient.
             </h2>

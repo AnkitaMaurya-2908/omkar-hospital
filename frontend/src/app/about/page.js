@@ -1,7 +1,7 @@
 import BannerSection from "@/components/AboutPage/BannerSection";
-import HealthCTA from "@/components/AboutPage/CTA";
 import AboutPageHeader from "@/components/AboutPage/Header";
 import Footer from "@/components/Footer/Footer";
+import CallToAction from "@/components/HeroSection/CallToAction";
 import Navbar from "@/components/HeroSection/Navbar";
 import React from "react";
 
@@ -10,8 +10,8 @@ export default function AboutPage() {
     <>
       <Navbar />
       <AboutPageHeader />
-      <HealthCTA/>
       <BannerSection />
+      <CallToAction/>
       <Footer />
     </>
   );

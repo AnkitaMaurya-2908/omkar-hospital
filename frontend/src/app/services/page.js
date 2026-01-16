@@ -7,6 +7,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/ServicesPage/Header";
 import OurCapabilities from "@/components/ServicesPage/OurCapabilities";
 import Card from "@/components/ServicesPage/Card";
+import CallToAction from "@/components/HeroSection/CallToAction";
 
 export default function OurServicesPage() {
   return (
@@ -26,7 +27,7 @@ export default function OurServicesPage() {
           ))}
         </div>
       </div>
-
+      <CallToAction/>
       <Footer />
     </>
   );
