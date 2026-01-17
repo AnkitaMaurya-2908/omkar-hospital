@@ -37,7 +37,7 @@ const ContactForm = ({
   };
 
   return (
-    <section className="w-full bg-gradient-to-b from-gray-50 to-white py-12 px-4 md:px-24 lg:px-48">
+    <section className="w-full  py-12 px-4 md:px-24 lg:px-48">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
         <motion.div
           initial={{ opacity: 0, x: -60 }}
