@@ -12,10 +12,14 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "https://onkar-hospital.vercel.app"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
-  }),
+    credentials: true,
+  })
 );
 
 app.use(express.json());
