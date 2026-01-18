@@ -6,7 +6,6 @@ export default function MessageModal({ message, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="bg-[#3d5a80] rounded-xl w-[90%] max-w-lg p-6 relative">
-        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-white hover:text-black text-xl"

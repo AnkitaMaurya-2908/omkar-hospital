@@ -103,10 +103,10 @@ const Navbar = () => {
 
         <div className="flex items-center space-x-4">
           <Link
-            href="/contact"
+            href="/admin/login"
             className="hidden lg:flex w-full text-sm font-medium px-4 py-2 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] items-center justify-center gap-2"
           >
-            Enquire Now <FaLongArrowAltRight />
+            Sign In <FaLongArrowAltRight />
           </Link>
 
           <button
@@ -178,10 +178,10 @@ const Navbar = () => {
 
           <div className="pt-4 border-t border-[#293241]/20">
             <Link
-              href="/contact"
+              href="/admin/login"
               className="w-full text-sm font-medium px-4 py-2 rounded-full transition bg-[#ee6c4d] text-white hover:bg-[#293241] flex items-center justify-center gap-2"
             >
-              Enquire Now <FaLongArrowAltRight />
+              Sign In <FaLongArrowAltRight />
             </Link>
           </div>
         </div>
