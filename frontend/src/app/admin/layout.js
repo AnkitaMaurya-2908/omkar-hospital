@@ -47,10 +47,34 @@
 // }
 
 
+// export default function AdminLayout({ children }) {
+//   return (
+//     <div>
+//       <main>{children}</main>
+//     </div>
+//   );
+// }
+
+
+"use client";
+
+import { useState } from "react";
+import Sidebar from "@/components/Dashboard/Sidebar";
+import Header from "@/components/Dashboard/Haeder";
+
 export default function AdminLayout({ children }) {
+  const [activeTab, setActiveTab] = useState("leads");
+
   return (
-    <div>
-      <main>{children}</main>
+    <div className="min-h-screen flex bg-gray-50">
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+
+      <main className="flex-1">
+        <Header activeTab={activeTab} />
+        <div className="p-6">{children}</div>
+      </main>
     </div>
   );
 }
+
+
