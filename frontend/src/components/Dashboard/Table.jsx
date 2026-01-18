@@ -76,8 +76,13 @@
 
 
 "use client";
+import { useState } from "react";
+import MessageModal from "./MessageModal";
+
 
 export default function MessagesTable({ messages, loading }) {
+  const [selectedMessage, setSelectedMessage] = useState(null);
+
   const getCategoryClass = (category) => {
     switch (category) {
       case "Appointment":
@@ -118,7 +123,12 @@ export default function MessagesTable({ messages, loading }) {
 
           <tbody>
             {messages.map((msg) => (
-              <tr key={msg._id} className="border-t hover:bg-gray-50 text-sm">
+              // <tr key={msg._id} className="border-t hover:bg-gray-50 text-sm">
+              <tr
+  key={msg._id}
+  onClick={() => setSelectedMessage(msg)}
+  className="border-t hover:bg-gray-50 text-sm cursor-pointer"
+>
                 <td className="px-6 py-4 font-medium">{msg.fullName}</td>
                 <td className="px-6 py-4">{msg.phone}</td>
                 <td
@@ -179,10 +189,15 @@ export default function MessagesTable({ messages, loading }) {
       {/* Mobile Stacked Table View */}
 <div className="md:hidden divide-y">
   {messages.map((msg) => (
+    // <div
+    //   key={msg._id}
+    //   className="grid grid-cols-2 gap-y-2 px-4 py-3 text-sm"
+    // >
     <div
-      key={msg._id}
-      className="grid grid-cols-2 gap-y-2 px-4 py-3 text-sm"
-    >
+  key={msg._id}
+  onClick={() => setSelectedMessage(msg)}
+  className="grid grid-cols-2 gap-y-2 px-4 py-3 text-sm cursor-pointer hover:bg-gray-50"
+>
       <span className="font-semibold text-gray-700">Name</span>
       <span className="text-right">{msg.fullName}</span>
 
@@ -210,6 +225,11 @@ export default function MessagesTable({ messages, loading }) {
     </div>
   ))}
 </div>
+
+<MessageModal
+  message={selectedMessage}
+  onClose={() => setSelectedMessage(null)}
+/>
 
     </div>
   );

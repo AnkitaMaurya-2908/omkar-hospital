@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-6 lg:px-4">
+    <section className="max-w-7xl mx-auto px-4 md:px-6 lg:py-12 lg:px-4">
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">
         <h2 className="text-[#293241] text-xl sm:text-2xl md:text-4xl font-semibold leading-tight max-w-xl">
           Explore Our Services <br />
